@@ -13,7 +13,7 @@
 public class Solution {
     public boolean hasCycle(ListNode head) {
         ListNode rabbit=head,turtle=head;
-        while(rabbit.next!=null && rabbit !=null){
+        while(rabbit!=null &&rabbit.next!=null){
             turtle = turtle.next;
             rabbit = rabbit.next.next;
             if(turtle == rabbit)
